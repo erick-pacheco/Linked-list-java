@@ -4,10 +4,11 @@ class Main {
   public static void main(String[] args) {
 
     LinkedList<String> animals = new LinkedList<String>();
-    animals.addLast("Cat");
-    animals.addLast("Dog");
-    animals.addLast("Mouse");
-    animals.addLast("Wolf");
+    String[] toBeAdded = { "Cat", "Dog", "Mouse", "Wolf" };
+
+    for (String animal : toBeAdded) {
+      animals.add(animal);
+    }
 
     /* Step 4 */
     animals.addFirst("Beaver");
